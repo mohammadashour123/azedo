@@ -1,0 +1,91 @@
+.man-sec
+{
+    margin-top: 150px ; 
+}
+.man-container
+{
+    
+    display: grid; 
+    grid-template-columns: repeat(4 , 1fr) ; 
+    grid-gap: 30px 
+    
+}
+.row
+{
+    text-align: left;
+    position: relative;
+
+}
+.opavity
+{
+    position: absolute ; 
+    top: 0 ; 
+    left: 0 ; 
+    width: 100% ; 
+    height: 100% ; 
+    background-color: rgba(0,0,0,0.3) ; 
+    opacity: 0 ; 
+    transition: 0.4s ; 
+}
+.row:hover .opavity
+{
+    opacity: 1 
+}
+.opavity i 
+{
+    font-size: 25px; 
+    cursor: pointer ; 
+    color: #ee2852 ;
+    margin: 10px 
+}
+.row img
+{
+    border-radius: 10px
+}
+.row h5
+{
+    margin-top: 10px ; 
+    font-weight: 600; 
+  
+}
+.row span
+{
+    font-size: 18px ; 
+    margin: 10px 5px
+}
+.man-info i 
+{
+    margin-top: 9px ; 
+    font-size: 20px; 
+    cursor: pointer ; 
+    color: #ee2852 ;
+    z-index: 2
+
+}
+.man-info
+{
+    display: flex ;
+    justify-content: space-between
+}
+@media(max-width:767px)
+{
+    .man-container
+{
+    margin: 100px auto ;
+    display: grid; 
+    grid-template-columns: repeat(2 , 1fr) ; 
+    grid-gap: 30px 
+    
+}
+}
+@media(max-width:450px)
+{
+    .man-container
+{
+    margin: 100px auto ;
+    display: grid; 
+    grid-template-columns: repeat(1 , 1fr) ; 
+    grid-gap: 30px 
+    
+}
+}

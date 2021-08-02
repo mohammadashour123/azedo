@@ -1,0 +1,1130 @@
+/*-----------------------------------------------------------------------*/
+/*Start global style */
+/*-----------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+*
+{
+font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box ; 
+    text-transform: capitalize; 
+}
+
+i
+{
+    cursor: pointer ;
+}
+ul 
+{
+    list-style: none ; 
+}
+a 
+{
+    text-decoration: none ; 
+}
+.marg
+{
+    margin: 90px 0 
+}
+:root
+{
+   --mcolor:#f1ceb0; 
+}
+.buy-now
+{
+    display: flex ; 
+    justify-content: space-between ; 
+    position: fixed  ; 
+    right: 0 ; 
+    top: 9.5%  ; 
+    z-index: 2 ;
+    background-color: #fff ; 
+    padding: 5px 10px ;
+    cursor: pointer 
+}
+.buy-now i
+{
+    color:  #ee2852 ;
+    margin-right: 5px ; 
+    padding-top: 5px
+}
+.buy-now a
+{
+    display: block ; 
+    font-weight: 600 ;
+    color: black
+}
+
+.scroll
+{
+    position: fixed ; 
+    right: 20px ; 
+    bottom: 20px;
+    display: inline-block; 
+    border-radius: 50% ; 
+    width: 40px;
+    height: 40px ;
+    text-align: center;
+    z-index: 8;
+    display: none ; 
+    background-color:#fff
+}
+.scroll i
+{
+    font-size: 25px ;
+
+    margin-top: 7px;
+   color: #ee2852
+}
+
+.menu
+{
+    margin-left: 10px ; 
+    display: none ;
+}
+
+.exit
+{
+        font-size: 25px;
+    color: #f1ceb0;
+    display: none 
+}
+.user-account
+{
+    margin-top: 20px ; 
+}
+.user-account-info
+{
+    display: flex ; justify-content: space-around
+}
+.user-account-info a
+{
+    color: black ; 
+    margin-left: 10px ; 
+    cursor: pointer ; 
+    transition: 0.2s  ; 
+    font-size: 14px ; 
+    font-weight: 500
+    
+}
+.user-account-info a:hover{
+    color: var(--mcolor)
+}
+.popup
+{
+    position: fixed ; 
+    top: 0 ; left: 0 ; 
+    width: 100% ; height: 100% ; 
+    z-index: 99999999 ; 
+    background-color: rgba(0,0,0,0.4) ;
+    display: none 
+}
+.popup-info
+{
+    position: fixed ; 
+    top: 50% ; 
+    left: 50% ; 
+    transform: translate(-50% , -50% ) ; 
+    text-align: center; 
+    background-color: #fff ; 
+    border-radius: 10px ; 
+    padding: 50px  ; 
+    width: auto; 
+    height: 300px;
+}
+.popup-info span
+{
+    font-weight: bold ; 
+    display: block ;
+    font-size: 25px ; 
+}
+.popup-info p 
+{
+    margin: 10px ; 
+    font-size: 14px ; 
+}
+.popup-info .popup-submit
+{
+    display: flex ; 
+    
+}
+.popup-submit input[type="email"]
+{
+    padding: 10px 5px  ;
+    display: block ;
+    outline:  0 ; 
+    border: 3px solid #f9f9f9 ; 
+    flex: 1
+}
+.popup-submit input[type="submit"]
+{
+    border: 0 ; 
+    background-color: #fff ; 
+    color: black; 
+    font-weight:600 ; 
+    transition: 0.4s
+    ;
+    
+}
+.popup-submit input[type="submit"]:hover{
+    background-color: black; 
+    color: #fff
+}
+.popup-info .cl-btn
+{
+      border: 0 ; 
+    background-color: black ; 
+    color: #fff ; 
+    font-weight:600 ; 
+    padding: 10px ; 
+    width: 100px ; 
+    position: absolute ; 
+    right: 40px ; 
+    bottom: 20px ; 
+    cursor: pointer; 
+    transition: 0.4s
+}
+.popup-info .cl-btn:hover
+{
+    opacity: 0.7
+}
+.setting-box
+{
+    position: fixed ; 
+    top: 0 ; 
+    left:  -230px ; 
+    width: 230px ; 
+    height: 100vh ; 
+    background-color:#fff ; 
+    transition: 0.5s
+}
+.setting-box.open
+{
+    left: 0
+}
+.setting-box .icon
+{
+    position: absolute ; 
+    top: 100px ; 
+    right: -35px ; 
+    background-color: #FFF ; 
+}
+.setting-box .icon i 
+{
+    font-size: 20px ; 
+    padding: 8px ; 
+    text-align: center ; 
+color: #ee2852
+}
+.d-l
+{
+    padding: 10px ;  
+}
+.d-l span
+{
+    display: block ; 
+    font-weight: 600 ; 
+    margin: 10px 0 ; 
+    font-size: 15px ; 
+    text-align: center ; 
+}
+.d-l ul
+{
+    display: flex ;
+    margin-top:15px ; 
+    
+}
+.d-l ul i
+{
+    font-size: 25px ; 
+    cursor: pointer ; 
+}
+.sun
+{
+    color: #d79914 ;
+    margin-right: 15px ; 
+}
+.dark
+{
+    background-color: #444141;
+}
+.sosial-icon
+{
+    padding: 10px  ;
+    
+}
+.sosial-icon span
+{
+    display: block ; 
+    text-align: center ; 
+    margin: 5px ; 
+}
+.sosial-icon ul 
+{
+    display: flex ; 
+}
+.sosial-icon ul li a
+{
+    margin: 0 5px  ; 
+    text-align: center
+}
+.sosial-icon ul li a i 
+{
+    font-size: 27px ;
+    margin: 10px 0 ; 
+  
+}
+.google
+{
+    color: #db4a39;
+}
+.twitter
+{
+    color:  #00acee;
+}
+.face
+{
+    color:  #4267B2;
+}
+.linked
+{
+    color: #0e76a8
+}
+
+
+
+
+/*-----------------------------------------------------------------------*/
+/*End global style */
+/*-----------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------*/
+/*start landing */
+/*-----------------------------------------------------------------------*/
+.header
+{
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+padding: 0 20px ;
+    position: fixed  ; 
+    z-index: 999 ;
+    width: 100% ;
+    background-color: #fff;
+    top: 0; 
+    
+}
+.header-content
+{
+    display: flex ; 
+    justify-content: space-between  ;
+    line-height: 25px ;
+    margin-bottom: 0px ;
+    position: relative
+}
+.header-content .logo
+{
+    width: 25% ; 
+         padding: 10px  0 ; 
+        margin: 5px 0 
+}
+.header-content .logo img
+{
+ width:50%;
+
+        
+}
+.header-content nav 
+{
+    margin-top: 20px ;
+    
+   
+}
+.header-content nav ul 
+{
+    display: flex ; 
+    
+
+}
+.header-content nav ul li 
+{
+    margin:  0 7px ; 
+}
+.header-content nav ul li a
+{
+    
+    padding: 7px ; 
+    color: black ; 
+    transition: 0.5s ; 
+    border-radius:6px ;
+    font-weight:600
+    
+}
+.header-content nav ul li a:hover{
+    background-color: #f1ceb0 ; 
+    color: white
+}
+.user-info .sec
+{
+    margin: 0 10px 
+}
+.user-info
+{
+    margin-top: 20px  ; 
+    display: flex ; 
+    margin-right:-70px
+}
+.user-info i 
+{
+     font-size: 25px ; 
+    color: #f1ceb0;
+    transition: 0.4s
+}
+.user-info i:hover
+{
+    color:#ffd3ad
+}
+
+@media(max-width:700px)
+{
+    .header-content .logo
+    {
+           width:45%;
+        padding: 10px  0 ; 
+        margin: 5px 0 
+        
+    }
+    
+    nav
+    {
+        position: fixed; 
+        top: 0 ; 
+        right: -50% ; 
+        width: 40% ; 
+        height: 100vh ;
+        background-color: white; 
+        z-index: 9999 ; 
+  
+    }
+    .user-info
+{
+    margin-top: 20px  ; 
+    display: flex ; 
+    margin-right:0px
+}
+    nav ul
+    {
+          display: flex ;
+        flex-direction: column ;
+       margin: 200px 0 
+        
+    }
+    nav ul li a 
+    {
+       margin: 5px 0 ;
+        display: block;
+        text-align: center
+    }
+    .exit
+    {
+        display: block; 
+        position: absolute ; 
+        top: 30px ; 
+        right: 30px ; 
+        
+    }
+
+}
+@media(max-width:430px)
+{
+    .header-content .logo
+    {
+           width:65%;
+        padding: 10px  0 ; 
+        margin: 5px 0 
+        
+    }
+    .user-info i 
+    {
+        font-size: 22px ;
+      
+    }
+    .user-info{
+        margin-top:16px
+    }
+}
+@media(max-width:300px)
+{
+    .header-content .logo
+    {
+           width:85%;
+        padding: 10px  0 ; 
+        margin: 5px 0 
+        
+    }
+}
+/*-----------------------------------------------------------------------*/
+/*end header */
+/*-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------*/
+/*Start landing */
+/*-----------------------------------------------------------------------*/
+.landing
+{
+    height:calc(100vh - 0px) ; 
+    background-image: url(../images/slide-3.jpg) ; 
+    background-position: center  ;
+    background-size: cover ; 
+    background-repeat: no-repeat ; 
+    position: relative ;
+}
+.landing-info
+{
+    position: absolute ; 
+    top: 25% ; 
+    left: 13% ; 
+    
+}
+.landing-info h1
+{
+    font-size: 75px ; 
+    font-weight: bold ; 
+    color:#fff ; 
+    line-height: 1.5 
+}
+.landing-info a
+{
+    font-size: 20px ; 
+    background-color: #fff ; 
+    color: black ; 
+    padding:15px 35px ; 
+    width: 250px ; 
+    display: block ;
+    text-align: center ; 
+    font-weight: 600 ; 
+     transition: 0.4s ;
+    margin-top: -20px
+}
+.landing-info a:hover
+{
+    background-color: black ; 
+    color: #fff ;
+    
+}
+@media(max-width:767px)
+{
+    .landing-info
+    {
+        left: 3% ; 
+    }
+    .landing-info h1
+    {
+        font-size: 60px
+    }
+    .menu
+    {
+        display: inline-block ; 
+    }
+    
+}
+@media(max-width:500px)
+{
+    .landing-info
+    {
+        left: 3% ; 
+        top: 35%
+    }
+    .landing-info h1
+    {
+        font-size: 50px
+    }
+    .landing-info a
+    {
+        width: 200px
+    }
+}
+
+
+/*-----------------------------------------------------------------------*/
+/*end landing */
+/*-----------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------*/
+/*start galalry */
+/*-----------------------------------------------------------------------*/
+.gallary-container
+{
+    display: grid ; 
+    grid-template-columns: repeat(3 , 1fr );
+    grid-gap: 30px ; 
+}
+.gallary-container .box img
+{
+    width: 100% ; 
+      padding: 10px ;
+    transition: 0.6s;
+    cursor: pointer ; 
+}
+
+.gallary-container .box img:hover{
+    padding: 0
+}
+/*-----------------------------------------------------------------------*/
+/*End galalry */
+/*-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------*/
+/*Start Recent-Products */
+/*-----------------------------------------------------------------------*/
+.section-info
+{
+margin-bottom: 30px  
+}
+.section-info h2
+{
+    text-align: center ; 
+    font-weight: 600 ; 
+    font-size: 30px;
+
+}
+.Recent-Products-container
+{
+      display: grid ; 
+    grid-template-columns: repeat(3 , 1fr );
+    grid-gap: 30px ; 
+}
+.dress-hover i
+{
+    font-size: 25px  ; 
+    background-color: white ; 
+    padding: 10px ; 
+    border-radius: 50% ; 
+    color: #ee2852; 
+    text-align: center
+    
+}
+.sec
+{
+    margin: 0 7px
+}
+.dress-hover 
+{
+    position: absolute ; 
+    bottom: 30% ; 
+    text-align: center ; 
+    opacity: 0 ; 
+    transition: 0.5s ;
+    text-align: center;
+    left: 28% 
+}
+.product:hover .dress-hover 
+{
+    opacity: 1 
+}
+.product .dress-hover i:hover
+{
+    background-color: black
+}
+.product img
+{
+    width: 100%  ; 
+    border-radius: 10px ; 
+}
+.product 
+{
+    text-align: center ;
+    position: relative 
+}
+.product h4
+{
+    margin: 10px 0 ;
+    font-size: 20px ; 
+    font-weight: 600
+}
+.product span
+{
+    display: block ; 
+    color: #c2572b ;
+    font-weight: 600 
+}
+/*-----------------------------------------------------------------------*/
+/*End Recent-Products */
+/*-----------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------*/
+/*Start Catigory */
+/*-----------------------------------------------------------------------*/
+.catigory .section-info span
+{
+    display: block ; 
+    text-align: center ; 
+    font-weight: 500 ;
+    font-size: 18px 
+}
+.catigory-contaoner
+{
+    display: grid ; 
+    grid-template-columns: repeat(3 , 1fr );
+    grid-gap: 30px ; 
+}
+.catigory-box img
+{
+    width: 100% ; 
+
+}
+.catigory-box
+{
+    position: relative ; 
+box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 18px;}
+.hover
+{
+    position: absolute ;
+    background-color: rgba(0,0,0,0.3) ; 
+    width: 100% ; 
+    height: 100% ; 
+    opacity: 0  ;
+    transition: 0.5s ;
+    top: 0 ; 
+    left:  0 
+}
+.hover a 
+{
+    position: absolute ; 
+    top: 50% ; 
+    left: 50% ; 
+    transform: translate(-50% , -50%) ; 
+    padding:7px 15px ; 
+    background-color:#c2572b; 
+    color: white; 
+    border-radius: 7px ; 
+    display: block ; 
+}
+.hover a 
+{
+    padding: 10px ; 
+    background-color:#c2572b; 
+    color: white; 
+    border-radius: 7px ; 
+    display: block ; 
+width: 100px ;
+    text-align: center ;
+    font-weight: 600
+}
+.catigory-box:hover .hover
+{
+    opacity: 1
+}
+/*-----------------------------------------------------------------------*/
+/*End Catigory */
+/*-----------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------*/
+/*Start CTA*/
+/*-----------------------------------------------------------------------*/
+.cta
+{
+    position: relative ; 
+    background-image: url(../images/cta.jpg)  ; 
+    background-position: center ; 
+    background-size: cover ; 
+    background-repeat: no-repeat ;
+    min-height: 450px
+}
+.cta-content
+{
+    color: #fff ; 
+    text-align: center ; 
+    position: absolute ; 
+      top: 50% ; 
+    left: 50% ; 
+    transform: translate(-50% , -50%) ; 
+}
+.cta-content span
+{
+    display: block ; 
+    margin: 3px 0 ; 
+    color: red ;
+    font-size: 18px ;
+}
+.cta-content h3
+{
+    font-size: 40px ; 
+    display: block ; 
+    margin: 5px ; 
+    font-weight: 600 
+}
+.cta-content p 
+{
+    line-height: 1.6 ; 
+    
+}
+.cta-content a {
+    font-size: 20px ; 
+    background-color: #fff ; 
+    color: black ; 
+    padding:15px 35px ; 
+    text-align: center ; 
+    font-weight: 600 ; 
+     transition: 0.4s ;
+    display: block ;
+    width: 200px ;
+    margin: auto
+}
+.cta-content a:hover
+{
+    background-color: black ; 
+    color: #fff 
+}
+/*-----------------------------------------------------------------------*/
+/*End CTA*/
+/*-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------*/
+/*Start best selling*/
+/*-----------------------------------------------------------------------*/
+
+.best-seller-container
+{
+      display: grid ; 
+    grid-template-columns: repeat(5 , 1fr );
+    grid-gap: 30px ; 
+}
+.sell img
+{
+    width: 100% ;
+    border-radius: 5px ;
+    padding: 15px ;
+    transition: 0.4s  ;
+    cursor: pointer 
+}
+.sell h4
+{
+    font-size: 18px ; 
+    font-weight: 600 ;
+    margin-top: 10px; 
+    display: block; 
+}
+.sell span
+{
+    display: block ; 
+    margin: 10px 0 ;
+    font-size: 18px ; 
+}
+.sell:hover img
+{
+    padding: 0 ;
+}
+/*-----------------------------------------------------------------------*/
+/*End best selling*/
+/*-----------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------*/
+/*Start diliver*/
+/*-----------------------------------------------------------------------*/
+
+
+.diliver-container
+{
+    display: grid ; 
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px 
+}
+.item
+{
+    overflow: hidden ;
+}
+.diliver-container i 
+{
+    font-size: 50px ;
+    float: left ;
+   margin-right: 15px
+}
+.item-dec
+{
+    padding-left: 30px ;
+}
+.item-dec h6
+{
+    font-weight: 600;
+    font-size: 18px
+}
+.item-dec span
+{
+    display: block ; 
+    font-size: 14px ;
+
+}
+@media(max-width:995px)
+{
+   .diliver-container
+{
+    display: grid ; 
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px ;
+    margin: auto
+} 
+}
+@media(max-width:483px)
+{
+   .diliver-container
+{
+    display: grid ; 
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 30px ;
+    
+} 
+    .item
+    {
+        margin:  auto ;
+        text-align: center
+    }
+.diliver-container i 
+{
+    font-size: 50px ;
+    float: none;
+  margin: 15px 0 
+}
+    .item-dec
+    {
+        margin: 0;
+        text-align: center ; 
+        margin: 0 auto
+    }
+}
+/*-----------------------------------------------------------------------*/
+/*End diliver*/
+/*-----------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------*/
+/*Start footer*/
+/*-----------------------------------------------------------------------*/
+.footer
+{
+    background-color: #f9f9f9  ; 
+    padding-top: 90px ; 
+    margin-top: 90px ;
+    padding-bottom:15px 
+}
+.footer a
+{
+    color: black ; 
+    transition: 0.4s  ; 
+    font-size: 14px
+}
+.footer span
+{
+    font-size: 20px;
+    text-align: center ;
+    display: block; 
+    margin: 0
+}
+.footer ul
+{
+    text-align: center
+}
+.footer a:hover{
+    color: #c2572b
+}
+.footer-content
+{
+    display: grid ; 
+     grid-template-columns: repeat(4 , 1fr );
+    grid-gap: 20px ; 
+}
+.sign-up span
+{
+    display: block ; 
+    color: black ; 
+    font-weight: 600 ; 
+    margin: 10px 0 ;
+    
+}
+.inputs
+{
+    display: flex ;
+    justify-content: space-between
+}
+}
+.inputs input[type="email"]
+{
+    border: 0 ; 
+    width: 300px ; 
+    display: block ; 
+    padding: 70px 10px ; 
+    background-color: aqua ; 
+}
+input[type="email"]
+{
+     border: 0 ; 
+    width: 300px ; 
+    display: block ; 
+    padding: 7px 10px ; 
+   border: 2px solid #efefef
+}
+.inputs input[type="submit"]
+{
+    padding: 7px 10px ; 
+    background-color: black ; 
+    color: #fff ; 
+    font-size: 20px ; 
+    font-weight: 600 ; 
+    outline: 0 ; 
+    border: 0  ; 
+    width: 100px ;
+    display: block 
+}
+.contact span 
+{
+    display: block ; 
+    margin-bottom: 10px ; 
+    text-align: center ; 
+    
+}
+.contact li
+{
+    margin-bottom: 10px  ; 
+    
+}
+.company span
+{
+    display: block ; 
+    margin-bottom: 10px ; 
+    text-align: center ; 
+}
+.company li
+{
+    margin-bottom: 10px ; 
+}
+.payment span 
+{
+     display: block ; 
+    margin-bottom: 10px ; 
+    text-align: center ; 
+}
+.payment li
+{
+     margin-bottom: 10px ; 
+}
+@media(max-width:1125px)
+{
+    .footer-content
+{
+    display: grid ; 
+     grid-template-columns: repeat(1 , 1fr );
+    grid-gap: 20px ; 
+}
+    .footer-content span
+    {
+        font-weight: 600; 
+    }
+ input[type="email"]
+{
+     border: 0 ; 
+    width: 500px ; 
+    display: block ; 
+    padding: 7px 10px ; 
+   border: 2px solid #efefef
+}
+  
+    
+}
+@media(max-width:730px)
+{
+     input[type="email"]
+{
+     border: 0 ; 
+    width: 400px ; 
+    display: block ; 
+    padding: 7px 10px ; 
+   border: 2px solid #efefef
+}
+}
+@media(max-width:558px)
+{
+       input[type="email"]
+{
+     border: 0 ; 
+    width: 300px ; 
+    display: block ; 
+    padding: 7px 10px ; 
+   border: 2px solid #efefef
+}
+}
+@media(max-width:400px)
+{
+    input[type="email"]
+{
+     border: 0 ; 
+    width: 200px ; 
+    display: block ; 
+    padding: 7px 10px ; 
+   border: 2px solid #efefef
+}  
+}
+/*-----------------------------------------------------------------------*/
+/*End footer*/
+/*-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------*/
+/*start media*/
+/*-----------------------------------------------------------------------*/
+@media(max-width:767px)
+{
+   .gallary-container
+    {
+        display: grid ; 
+    grid-template-columns: repeat(1 , 1fr );
+    grid-gap: 30px ; 
+    }
+    .Recent-Products-container
+    {
+      display: grid ; 
+    grid-template-columns: repeat(1 , 1fr );
+    grid-gap: 15px ; 
+    }
+    .catigory-contaoner
+    {
+    display: grid ; 
+    grid-template-columns: repeat(1 , 1fr );
+    grid-gap: 20px ; 
+    }
+    .best-seller-container
+    {
+      display: grid ; 
+    grid-template-columns: repeat(1 , 1fr );
+    grid-gap: 20px ; 
+    }
+    .sell h4 ,
+    .sell span
+    {
+        margin-left: 25px
+    }
+    .user-account
+    {
+        display: none
+    }
+    
+}
+@media(min-width:768px)
+{
+    .user-info
+    {
+        margin-right: 30px
+    }
+}
+.user-account a
+{
+    padding: 0 10px
+}
+/*-----------------------------------------------------------------------*/
+/*end media*/
+/*-----------------------------------------------------------------------*/
+
+{
+    
+}

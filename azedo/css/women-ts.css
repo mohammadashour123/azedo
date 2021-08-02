@@ -1,0 +1,80 @@
+.women-t-shirt
+{
+  
+    margin-top: 150px
+}
+.women-t-shirt-container
+{
+    display: grid ; 
+    grid-template-columns: repeat(4 , 1fr) ; 
+    grid-gap: 30px  ; 
+    position: relative 
+}
+.row
+{
+    position: relative; 
+}
+.row img
+{
+    width: 100% ;
+    border-radius: 15px
+}
+.row span
+{
+    display: block ; 
+    font-weight: 600 ; 
+    margin: 10px 0 ; 
+}
+.row p 
+{
+    font-weight: 600 ; 
+    color: #c2572b
+}
+.dress-hover i
+{
+    font-size: 25px  ; 
+    background-color: white ; 
+    padding: 10px ; 
+    border-radius: 50% ; 
+    color: #ee2852; 
+    
+}
+.sec
+{
+    margin: 0 7px
+}
+.dress-hover 
+{
+    position: absolute ; 
+    bottom: 40% ; ; 
+    text-align: center ; 
+    opacity: 0 ; 
+    transition: 0.5s  ; 
+    left: 0
+}
+.row:hover .dress-hover 
+{
+    opacity: 1 
+}
+.row .dress-hover i:hover
+{
+    background-color: black
+}
+@media(max-width:767px)
+{
+ .women-t-shirt-container
+{
+    display: grid ; 
+    grid-template-columns: repeat(2 , 1fr) ; 
+    grid-gap: 30px  ; 
+}   
+}
+@media(max-width:400px)
+{
+ .women-t-shirt-container
+{
+    display: grid ; 
+    grid-template-columns: repeat(1 , 1fr) ; 
+    grid-gap: 30px  ; 
+}   
+}

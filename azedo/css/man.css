@@ -1,0 +1,83 @@
+.pannaer-container
+{
+    display: grid ; 
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px ; 
+}
+.man-section
+{
+    background-image: url(../images/men-panner.jpg);
+    background-repeat: no-repeat ; 
+    background-size: cover ; 
+    min-height: 599px;
+    background-attachment: fixed ; 
+    margin-top: 70px ;
+}
+.info
+{
+    position: absolute ; 
+    top: 40% ; 
+    left: 6% ; 
+  
+}
+.info h1
+{
+      color: white ; 
+    font-size: 70px ; 
+    font-weight: 600 
+}
+.men
+{
+    margin-top: 180px ; 
+}
+.pannaer img
+{
+    width: 100% ;
+    border-radius: 3px 
+}
+
+.pannaer .sec
+{
+    margin: 0 10px ;
+}
+.pannaer
+{
+    text-align: center ; 
+    
+}
+.pannaer h6
+{
+    font-size: 22px ; 
+    margin: 10px 0 ;
+    color: black
+}
+.pannaer a
+{
+    color: black
+}
+@media(max-width:767px)
+{
+ .pannaer-container
+{
+    display: grid ; 
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 30px ; 
+}  
+    .info
+{
+    position: absolute ; 
+    top: 40% ; 
+    left: 6% ; 
+  
+}
+.info h1
+{
+      color: white ; 
+    font-size: 50px ; 
+    font-weight: 600 
+}
+    .man-section
+    {
+        background-position: center ; 
+    }
+}
